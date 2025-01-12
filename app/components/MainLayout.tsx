@@ -19,7 +19,7 @@ const TerminalInput = dynamic(() => import("./TerminalInput"), {
 });
 
 export type Section =
-  | "reamdme"
+  | "readme"
   | "about"
   | "experience"
   | "projects"
@@ -29,7 +29,7 @@ export type Section =
 
 export default function MainLayout() {
   const [mounted, setMounted] = useState(false);
-  const [activeSection, setActiveSection] = useState<Section>("home");
+  const [activeSection, setActiveSection] = useState<Section>("readme");
   const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function MainLayout() {
 
       if (!isCommandPaletteOpen && !e.metaKey && !e.ctrlKey && !e.altKey) {
         const sections: Section[] = [
-          "home",
+          "readme",
           "about",
           "experience",
           "projects",
