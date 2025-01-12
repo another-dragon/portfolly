@@ -38,7 +38,7 @@ export default function MainContent({ activeSection }: MainContentProps) {
     <div className="flex-1 overflow-auto bg-[#1C1C1C] p-6">
       <div className="max-w-4xl mx-auto">
         <div className="prose prose-invert max-w-none">
-          {activeSection === "home" && <HomeSection />}
+          {activeSection === "readme" && <HomeSection />}
           {activeSection === "about" && <AboutSection />}
           {activeSection === "experience" && <ExperienceSection />}
           {activeSection === "projects" && <ProjectsSection />}
