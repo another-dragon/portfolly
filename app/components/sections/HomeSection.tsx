@@ -8,8 +8,10 @@ export default function HomeSection() {
       </h1>
       <div className="bg-[#252526] p-4 rounded-md mb-4">
         <p className="text-[#D4D4D4] mb-2">
-          Hi there! I’m Rumen, a Solutions Developer who loves creating
-          beautiful, effective, and creative solutions to tricky problems.
+          Hi, I'm Rumen, a Solutions Developer who transforms complex technical
+          challenges into elegant, scalable solutions. I combine innovative
+          thinking with robust engineering to create systems that make a real
+          impact.
         </p>
         <p className="text-[#D4D4D4]">
           This project is all about showing you what I can do with the tools I

@@ -252,7 +252,6 @@ export default function TerminalInput() {
                   ? prompts[step]()
                   : prompts[step]
               }
-              autoFocus
               ref={inputRef}
               onFocus={() => {
                 // Disable number navigation when input is focused

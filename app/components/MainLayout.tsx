@@ -46,22 +46,6 @@ export default function MainLayout() {
         e.preventDefault();
         setIsCommandPaletteOpen(true);
       }
-
-      if (!isCommandPaletteOpen && !e.metaKey && !e.ctrlKey && !e.altKey) {
-        const sections: Section[] = [
-          "readme",
-          "about",
-          "experience",
-          "projects",
-          "python",
-          "goals",
-          "profiles",
-        ];
-        const num = parseInt(e.key);
-        if (num >= 1 && num <= 7) {
-          setActiveSection(sections[num - 1]);
-        }
-      }
     };
 
     if (mounted) {

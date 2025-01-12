@@ -14,9 +14,16 @@ export default function TopBar({
 }: TopBarProps) {
   return (
     <div className="h-12 border-b border-[#2D2D2D] flex items-center justify-between px-4 bg-[#1C1C1C]">
-      <div className="flex items-center space-x-2">
-        <span className="text-[#666666]">~/portfolio/</span>
-        <span className="text-[#D4D4D4]">{activeSection}</span>
+      <div className="flex items-center">
+        <div className="flex items-center space-x-2 mr-4">
+          <div className="w-3 h-3 rounded-full bg-[#fe5f57] relative group hover:after:content-['×'] hover:after:absolute hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:text-[#4c0002] hover:after:text-[10px] hover:after:font-bold"></div>
+          <div className="w-3 h-3 rounded-full bg-[#febc2e] relative group hover:after:content-['−'] hover:after:absolute hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:text-[#4c0002] hover:after:text-[10px] hover:after:font-bold"></div>
+          <div className="w-3 h-3 rounded-full bg-[#28c840] relative group hover:after:content-['+'] hover:after:absolute hover:after:top-1/2 hover:after:-translate-y-1/2 hover:after:left-1/2 hover:after:-translate-x-1/2 hover:after:text-[#4c0002] hover:after:text-[10px] hover:after:font-bold"></div>
+        </div>
+        <div className="flex items-center space-x-2">
+          <span className="text-[#666666]">~/portfolio/</span>
+          <span className="text-[#D4D4D4]">{activeSection}</span>
+        </div>
       </div>
       <button
         onClick={onCommandPalette}
