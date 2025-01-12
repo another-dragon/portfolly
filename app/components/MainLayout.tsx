@@ -19,7 +19,7 @@ const TerminalInput = dynamic(() => import("./TerminalInput"), {
 });
 
 export type Section =
-  | "home"
+  | "reamdme"
   | "about"
   | "experience"
   | "projects"
