@@ -1,20 +1,20 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function Projects() {
   const projects = [
     {
       title: "Project 1",
       description: "A brief description of project 1.",
-      link: "#"
+      link: "#",
     },
     {
       title: "Project 2",
       description: "A brief description of project 2.",
-      link: "#"
+      link: "#",
     },
     // Add more projects as needed
-  ]
+  ];
 
   return (
     <section id="projects" className="py-20 px-4 md:px-6">
@@ -28,13 +28,18 @@ export default function Projects() {
             <CardContent>
               <p className="mb-4">{project.description}</p>
               <Button asChild>
-                <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Project
+                </a>
               </Button>
             </CardContent>
           </Card>
         ))}
       </div>
     </section>
-  )
+  );
 }
-

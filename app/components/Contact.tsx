@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 export default function Contact() {
   return (
@@ -10,9 +10,10 @@ export default function Contact() {
         <Input type="text" placeholder="Your Name" required />
         <Input type="email" placeholder="Your Email" required />
         <Textarea placeholder="Your Message" required />
-        <Button type="submit" className="w-full">Send Message</Button>
+        <Button type="submit" className="w-full">
+          Send Message
+        </Button>
       </form>
     </section>
-  )
+  );
 }
-

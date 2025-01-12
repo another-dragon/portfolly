@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export default function PythonSkillsSection() {
   return (
     <div className="prose prose-invert max-w-none">
       <h1 className="text-[#F92672]">Python Skills</h1>
-      <p className="text-[#F8F8F2]">Here's a sample of my Python code demonstrating some advanced concepts:</p>
+      <p className="text-[#F8F8F2]">
+        Here's a sample of my Python code demonstrating some advanced concepts:
+      </p>
       <pre className="bg-[#3E3D32] p-4 rounded text-[#F8F8F2]">
         {`from typing import List, Callable
 import functools
@@ -47,13 +49,17 @@ if __name__ == "__main__":
       </pre>
       <p className="text-[#F8F8F2]">This code demonstrates:</p>
       <ul className="text-[#F8F8F2]">
-        <li>Use of type hints for better code readability and maintainability</li>
-        <li>Implementation of a memoization decorator for optimizing recursive functions</li>
+        <li>
+          Use of type hints for better code readability and maintainability
+        </li>
+        <li>
+          Implementation of a memoization decorator for optimizing recursive
+          functions
+        </li>
         <li>Recursive implementation of the Fibonacci sequence</li>
         <li>Prime number checking and generation</li>
         <li>List comprehension for concise and readable code</li>
       </ul>
     </div>
-  )
+  );
 }
-

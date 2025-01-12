@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -9,13 +9,28 @@ export default function Header() {
       <div className="text-2xl font-bold">Your Name</div>
       <nav>
         <ul className="flex space-x-4">
-          <li><Link href="#about"><Button variant="ghost">About</Button></Link></li>
-          <li><Link href="#experience"><Button variant="ghost">Experience</Button></Link></li>
-          <li><Link href="#projects"><Button variant="ghost">Projects</Button></Link></li>
-          <li><Link href="#contact"><Button variant="ghost">Contact</Button></Link></li>
+          <li>
+            <Link href="#about">
+              <Button variant="ghost">About</Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="#experience">
+              <Button variant="ghost">Experience</Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="#projects">
+              <Button variant="ghost">Projects</Button>
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact">
+              <Button variant="ghost">Contact</Button>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
-  )
+  );
 }
-

@@ -1,6 +1,6 @@
 # Portfolly
 
-A modern, sleek portfolio application built with Next.js 14 and the latest web technologies. Showcase your work, skills, and achievements with style.
+Deeply inspired by the [Warp Terminal](https://www.warp.dev/), a lightning-fast, rust-based terminal for the 21st century, Portfolly is a modern, sleek portfolio application built with Next.js 14 and the latest web technologies. Showcase your work, skills, and achievements with style.
 
 ## 🚀 Tech Stack
 
@@ -29,22 +29,26 @@ A modern, sleek portfolio application built with Next.js 14 and the latest web t
 ## 🛠️ Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/portfolly.git
 cd portfolly
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env.local` file in the root directory and add your environment variables:
+
 ```env
 # Add your environment variables here
 ```
 
 4. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -88,9 +92,10 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ## 📧 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Rumen Draganov - [@rumen4draganovs](https://x.com/rumen4draganovs) - rumen@anotherdragon.com
 
-Project Link: [https://github.com/yourusername/portfolly](https://github.com/yourusername/portfolly)
+Project Link: [https://github.com/yourusername/portfolly](https://github.com/another-dragon/portfolly)
 
 ---
+
 Built with ❤️ using Next.js and modern web technologies

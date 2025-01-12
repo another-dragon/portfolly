@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Github, Linkedin, Twitter, Globe, Mail } from 'lucide-react';
+import React, { useState } from "react";
+import { Github, Linkedin, Twitter, Globe, Mail } from "lucide-react";
 
 interface Profile {
   host: string;
@@ -17,43 +17,35 @@ export default function NetworkProfilesSection() {
     {
       host: "github",
       hostname: "github.com",
-      user: "yourusername",
-      url: "https://github.com/yourusername",
+      user: "another-dragon",
+      url: "https://github.com/another-dragon",
       icon: Github,
-      description: "Open source contributions and personal projects"
+      description: "Open source contributions and personal projects",
     },
     {
       host: "linkedin",
       hostname: "linkedin.com",
-      user: "yourusername",
-      url: "https://linkedin.com/in/yourusername",
+      user: "rumen4draganovs",
+      url: "https://linkedin.com/in/rumen-draganov-ad-solutions",
       icon: Linkedin,
-      description: "Professional network and career updates"
+      description: "Professional network and career updates",
     },
     {
-      host: "twitter",
-      hostname: "twitter.com",
-      user: "yourusername",
-      url: "https://twitter.com/yourusername",
+      host: "x",
+      hostname: "x.com",
+      user: "rumen4draganovs",
+      url: "https://x.com/rumen4draganovs",
       icon: Twitter,
-      description: "Tech insights and community engagement"
-    },
-    {
-      host: "portfolio",
-      hostname: "yourwebsite.com",
-      user: "you",
-      url: "https://yourwebsite.com",
-      icon: Globe,
-      description: "Personal website and blog"
+      description: "Tech insights and community engagement",
     },
     {
       host: "email",
-      hostname: "email.com",
-      user: "you@email.com",
-      url: "mailto:you@email.com",
+      hostname: "anotherdragon.com",
+      user: "rumen@anotherdragon",
+      url: "mailto:rumen@anotherdragon.com",
       icon: Mail,
-      description: "Direct communication channel"
-    }
+      description: "Direct communication channel",
+    },
   ];
 
   return (
@@ -70,7 +62,9 @@ export default function NetworkProfilesSection() {
           <div
             key={profile.host}
             className={`mb-4 ${
-              selectedProfile === profile.host ? 'bg-[#49483E] -mx-4 px-4 py-2' : ''
+              selectedProfile === profile.host
+                ? "bg-[#49483E] -mx-4 px-4 py-2"
+                : ""
             }`}
             onMouseEnter={() => setSelectedProfile(profile.host)}
             onMouseLeave={() => setSelectedProfile(null)}
@@ -92,7 +86,9 @@ export default function NetworkProfilesSection() {
                 >
                   {profile.url}
                 </a>
-                <span className="text-[#75715E] ml-2">// {profile.description}</span>
+                <span className="text-[#75715E] ml-2">
+                  // {profile.description}
+                </span>
               </div>
             )}
           </div>
@@ -100,14 +96,13 @@ export default function NetworkProfilesSection() {
       </pre>
       <div className="mt-4 text-[#75715E]">
         <p>
-          # To connect, simply click on any profile above or use SSH-style commands:
+          # To connect, simply click on any profile above or use SSH-style
+          commands:
           <br />
           # ssh github # connects to GitHub profile
-          <br />
-          # ssh linkedin # connects to LinkedIn profile
+          <br /># ssh linkedin # connects to LinkedIn profile
         </p>
       </div>
     </div>
   );
 }
-

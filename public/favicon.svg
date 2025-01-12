@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Terminal background -->
+  <rect x="0" y="0" width="32" height="32" fill="#6d6d6d"/>
+  
+  <!-- Command prompt chevron -->
+  <path d="M6 10L14 16L6 22" stroke="#f47721" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Underscore cursor -->
+  <rect x="17" y="19" width="8" height="3" fill="#f47721">
+    <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

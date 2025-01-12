@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function About() {
   return (
@@ -10,7 +10,8 @@ export default function About() {
         </CardHeader>
         <CardContent>
           <p className="mb-4">
-            [Write a brief paragraph about your professional journey, key skills, and what drives you.]
+            [Write a brief paragraph about your professional journey, key
+            skills, and what drives you.]
           </p>
           <h3 className="text-xl font-semibold mb-2">Key Skills:</h3>
           <ul className="list-disc list-inside">
@@ -22,6 +23,5 @@ export default function About() {
         </CardContent>
       </Card>
     </section>
-  )
+  );
 }
-

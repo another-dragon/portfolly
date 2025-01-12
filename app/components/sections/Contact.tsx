@@ -23,6 +23,5 @@ export default function Contact() {
 </html>`}
       </pre>
     </div>
-  )
+  );
 }
-

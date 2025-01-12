@@ -4,7 +4,7 @@ export default function HomeSection() {
   return (
     <div className="prose prose-invert max-w-none">
       <h1 className="text-[#569CD6] text-3xl font-bold mb-4">
-        Welcome to My Portfolio
+        Welcome to R-A-D
       </h1>
       <div className="bg-[#252526] p-4 rounded-md mb-4">
         <p className="text-[#D4D4D4] mb-2">
@@ -26,7 +26,7 @@ export default function HomeSection() {
         <li className="flex items-center mb-2">
           <span className="text-[#DCDCAA] mr-2">🚀</span>
           <span className="text-[#D4D4D4]">
-            Solutions Developer specializing in versatile problem-solving
+            Developer specializing in versatile problem-solving
           </span>
         </li>
         <li className="flex items-center mb-2">
