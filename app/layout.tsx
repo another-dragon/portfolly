@@ -1,5 +1,6 @@
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
+import { SpeedInsights } from "@vercel/analytics/react";
 
 const jetBrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
@@ -9,11 +10,11 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon.svg',
-        type: 'image/svg+xml',
-      }
-    ]
-  }
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +32,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
